@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-#inlude <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Prints the alphabet in lowercase, except for q and e.
@@ -12,13 +12,12 @@
  */
 int main(void)
 {
-	char ch = 'a';
-
-	while (ch <= 'z')
-	{
-		if (ch != 'e' && ch != 'q')
+	char alpha;
+	
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+		if (alpha != 'e' && alpha != 'q')
 		{	
-			putchar(ch);
+			putchar(alpha);
 		}
 		ch++
 	}
